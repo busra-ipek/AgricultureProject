@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+@await Component.InvokeAsync("_DashboardHeaderPartial")
+
+<body>
+
+    @await Component.InvokeAsync("_DashboardNavbarPartial")
+    @* ilk <div> etiketli kod parçası alınmıştır*@
+
+    @await Component.InvokeAsync("_DashboardOverviewPartial")
+    @*classı row olan ilk <div> etiketli kod parçası alınmıştır.*@
+
+    @await Component.InvokeAsync("_DashboardChartPartial")
+    @*classı row olan ikinci <div> etiketli kod parçası alınmıştır.*@
+
+    @await Component.InvokeAsync("_DashboardTablePartial")
+    @*classı row olan üçüncü <div> etiketli kod parçası alınmıştır.*@
+
+    @await Component.InvokeAsync("_DashboardScriptPartial")
+    @*js kodları alınmıştır.*@
+</body>
+</html>

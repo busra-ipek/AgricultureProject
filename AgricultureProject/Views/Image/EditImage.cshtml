@@ -1,0 +1,33 @@
+﻿@model EntityLayer.Concrete.Image
+@{
+    ViewData["Title"] = "EditImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Görsel Düzenleme Sayfası</h4>
+            <form class="forms-sample" method="post">     @* Form etiketi arasında olan kodlar form metodu post olduğu zaman çalışır. *@
+                <input type="hidden" asp-for="ImageID" /> @*Görsel id'si sayfaya gizli olarak alınır.*@
+                <div class="form-group">
+                    <label >Başlık</label>
+                    <input type="text" asp-for="Title" class="form-control">
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label >Görsel Adresi</label>
+                    <input type="text" asp-for="ImageUrl" class="form-control" placeholder="Url giriniz">
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label >Açıklama</label>
+                    <input type="text" asp-for="Description" class="form-control">
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Değişiklikleri Kaydet</button>
+            </form>
+        </div>
+    </div>
+</div>
+

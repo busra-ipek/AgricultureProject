@@ -1,0 +1,34 @@
+﻿@model AgricultureProject.Models.ServiceAddViewModel 
+
+@{
+	ViewData["Title"] = "AddService";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@*Form içindeki kodlar forms->basic_elements.html sayfasından alınmıştır.*@
+
+<div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Hizmet Kaydı</h4>
+                <form class="forms-sample" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Başlık</label>
+                        <input type="text" asp-for="Title" class="form-control" id="exampleInputName1">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Görsel Adresi</label>
+                        <input type="text" asp-for="Image" class="form-control" id="exampleInputEmail3">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Açıklama</label>
+                        <textarea asp-for="Description" class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Kaydet</button>
+                </form>
+            </div>
+        </div>
+</div>

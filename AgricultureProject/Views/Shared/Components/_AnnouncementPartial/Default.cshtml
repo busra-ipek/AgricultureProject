@@ -1,0 +1,97 @@
+﻿
+<div class="blog" id="blog">
+	<div class="container">
+		<h3 class="tittle">Son Duyurular</h3>
+		<p class="heading-btm-w3ls">Çiftliklerimiz ve tarlalarımızdan son haberler aşağıdadır</p>
+		
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-7 blog-img1-agileits-w3layouts">
+				<a href="#" data-toggle="modal" data-target="#myModal11"></a>
+			</div>
+			<div class=" col-md-5 blog-info-w3layouts">
+				<h6> <a href="#" data-toggle="modal" data-target="#myModal11">@ViewBag.AnnouncementTitle1</a></h6>
+				<div class="inner-info">
+					<a href="#" class="blog-text-w3ls bar"></a><span>@ViewBag.AnnouncementDate1</span>
+					<p class="para-w3-agileits">Çiftliğimizdeki yenilikçi teknolojiler ve yöntemlerle tarımın her alanında verimliliği artırarak, çevresel etkileri azaltan önemli ilerlemelere imza atıyoruz.</p>
+				</div>
+				<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal11">Daha Fazla</a>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-5 blog-info-w3layouts blog-mid">
+				<h6><a href="#" data-toggle="modal" data-target="#myModal22">@ViewBag.AnnouncementTitle2</a></h6>
+				<div class="inner-info-mid">
+					<a href="#" class="blog-text-w3ls mid-bar"></a><span>@ViewBag.AnnouncementDate2</span>
+					<p class="para-w3-agileits">Modern teknolojiler ve sürdürülebilir yaklaşımlarımızla, yüksek verimlilik ve çevresel sorumluluk hedeflerimizi gerçekleştirmeye devam ediyoruz.</p>
+				</div>
+				<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal22">Daha Fazla</a>
+
+			</div>
+			<div class=" col-md-7 blog-img2-agileits-w3layouts">
+				<a href="#" data-toggle="modal" data-target="#myModal22"></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-7 blog-img3-agileits-w3layouts">
+				<a href="#" data-toggle="modal" data-target="#myModal33"></a>
+			</div>
+			<div class=" col-md-5 blog-info-w3layouts">
+				<h6><a href="#" data-toggle="modal" data-target="#myModal33">@ViewBag.AnnouncementTitle3</a></h6>
+				<div class="inner-info">
+					<a href="#" class="blog-text-w3ls bar"></a><span>@ViewBag.AnnouncementDate3</span>
+					<p class="para-w3-agileits">Pazarın ilk adımlarında, geniş ürün yelpazemiz ve yenilikçi yöntemlerimizle tarım sektöründe etkili bir oyuncu olma yolunda ilerliyoruz.</p>
+				</div>
+				<a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal33">Daha fazla</a>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModal11" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<img src="~/web/images/b1.jpg" alt=" " class="img-responsive">
+				<h5>@ViewBag.AnnouncementTitle1</h5>
+				<p>@ViewBag.AnnouncementDescription1</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal22" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<img src="~/web/images/b2.jpg" alt=" " class="img-responsive">
+				<h5>@ViewBag.AnnouncementTitle2</h5>
+				<p>@ViewBag.AnnouncementDescription2</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal33" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<img src="~/web/images/b3.jpg" alt=" " class="img-responsive">
+				<h5>@ViewBag.AnnouncementTitle3</h5>
+				<p>@ViewBag.AnnouncementDescription3</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+@* C# kodları @ sembolünü başına alarak kullanılırlar.*@

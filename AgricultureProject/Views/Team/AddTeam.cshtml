@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concrete.Team
+@{
+    ViewData["Title"] = "AddTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Takım Arkadaşı Kaydı</h4>
+                <form class="forms-sample" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Ad Soyad</label>
+                        <input type="text" asp-for="PersonName" class="form-control">
+                        <span asp-validation-for="PersonName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Görev</label>
+                        <input type="text" asp-for="Task" class="form-control">
+                        <span asp-validation-for="Task" class="text-danger"></span>
+                    </div> 
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Görsel Adresi</label>
+                        <input type="text" asp-for="ImageUrl" class="form-control" placeholder="Url giriniz">
+                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Facebook</label>
+                        <input type="text" asp-for="FacebookUrl" class="form-control" placeholder="Facebook adresinizi giriniz">
+                    </div>         
+                    <div class="form-group">
+                        <label for="exampleInputName1">Instagram</label>
+                        <input type="text" asp-for="InstagramUrl" class="form-control" placeholder="Instagram adresinizi giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Twitter</label>
+                        <input type="text" asp-for="TwitterUrl" class="form-control" placeholder="Twitter adresinizi giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Website</label>
+                        <input type="text" asp-for="WebsiteUrl" class="form-control"  placeholder="Website adresinizi giriniz">
+                    </div>                   
+                    <button type="submit" class="btn btn-outline-primary">Kaydet</button>
+                </form>
+            </div>
+        </div>
+</div>
