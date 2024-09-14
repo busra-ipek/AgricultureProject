@@ -1,6 +1,6 @@
 # AgricultureProject
 
-Bu projeyi, Udemy'de Murat Yücedağ'ın "C# ile OOP: Adım Adım Katmanlı Mimari" kursunu izleyerek geliştirdim. Projede ASP.NET MVC framework'ü kullanılarak çeşitli işlevler uygulanmıştır.
+Bu projeyi, Udemy'de Murat Yücedağ'ın "C# ile OOP Temelleri: Adım Adım Katmanlı Mimari" kursunu izleyerek geliştirdim. Projede ASP.NET MVC framework'ü kullanılarak çeşitli işlevler uygulanmıştır.
 
 Proje, Kullanıcı Arayüzü (UI) ve Admin Paneli olmak üzere iki ana bileşenden oluşmaktadır.
 
